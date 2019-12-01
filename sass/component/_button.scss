@@ -1,0 +1,75 @@
+.btn {
+    border-radius: 0.4rem;
+    background-color: $cerise;
+    color: $white;
+    display: block;
+    border: none;
+    outline: none;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    font-family:'CircularStd-Medium';
+    transition: all .3s;
+   
+    &-primary__large {
+        width: 11.8rem;
+        height: 5.6rem;
+        font-size: 1.8rem;
+        &:hover {
+            background-color: #ce1066;
+        }
+        &:active {
+            background-color: $dark-fuchsia;
+        }
+    }
+
+    &-primary__medium {
+        width: 11.3rem;
+        height: 4.8rem;
+        font-size: 1.6rem;
+        &:hover {
+            background-color: #ce1066;
+        }
+        &:active {
+            background-color: $dark-fuchsia;
+        }
+    }
+
+    &-outline__large {
+        width: 17.4rem;
+        height: 4.8rem;
+        font-size: 1.6rem;
+        border: solid 1px #ce1066;
+        background-color: $white;
+        color: #ce1066;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        &:hover {
+            background-color: $very-light-pink;
+        }
+        &:active {
+            background-color: #ffd2d1;
+        }
+    }
+
+    &-ghost__large {
+        width: 11.8rem;
+        height: 5.6rem;
+        font-size: 1.6rem;
+        background-color: $white;
+        color: #ce1066;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        &:hover {
+            background-color: $very-light-pink;
+        }
+        &:active {
+            background-color: #ffd2d1;
+        }
+    }
+}
+
+

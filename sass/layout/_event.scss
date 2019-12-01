@@ -1,0 +1,35 @@
+.upcoming-events {
+    background-color: $pale-grey-two;
+    padding: 5rem 0;
+}
+.event-card {
+    height: 24rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    background-color: $white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0 10px 20px 0 $silver;
+
+    p {
+        padding-top: 2rem;
+    }
+    
+
+    &__date {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 1rem;
+    
+        span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+}

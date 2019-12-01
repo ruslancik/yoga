@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    font-family: 'CircularStd-Black';
+    font-family: 'CircularStd-Medium';
 }
 
 .wrapper {
@@ -20,8 +20,9 @@ body {
     grid-template-rows: 100vh;
 }
 
-.container{
-    grid-template-columns: 2 / 14;
+#container{
+    width: 80%;
+    margin: 0 auto;
 }
 
 a {
