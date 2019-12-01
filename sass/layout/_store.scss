@@ -1,0 +1,51 @@
+.playstore {
+    font-family: inherit;
+    background-color: $pale-grey-two;
+    padding: 8rem 0 8rem 2rem;
+    
+  }
+
+  .playstore-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-large {
+        height: 400px;
+        width: 200px;
+     
+    }
+
+    &-small {
+        margin: 0 0 0 2rem;
+        height: 320px;
+        width: 170px;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 4rem 10rem;
+
+        &__store {
+            img {
+                height: 50%;
+                width: 125px;
+            }
+        }
+        h2 {
+            padding-bottom: 2rem;
+            color: $charcoal-grey;
+        }
+
+        p {
+            color: $charcoal-grey-two;
+        }
+    }
+}

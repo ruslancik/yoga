@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -164,6 +181,67 @@ a {
     .btn-ghost__large:active {
       background-color: #ffd2d1; }
 
+.footer {
+  padding: 4rem 0; }
+
+.footer-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 8rem; }
+  .footer-list__section p {
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #3c3c45; }
+  .footer-list__section h6 {
+    padding-bottom: 1.5rem; }
+  .footer-list__section--items {
+    list-style: none;
+    padding: 1rem 0; }
+    .footer-list__section--items a {
+      text-decoration: none;
+      font-size: 1.4rem;
+      color: #3c3c45; }
+  .footer-list__section .form {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer-list__section .form input {
+      width: 25rem;
+      height: 4.8rem;
+      background-color: #ffebeb;
+      border: none;
+      outline: none;
+      color: #3c3c45;
+      font-size: 1.4rem; }
+      .footer-list__section .form input::placeholder {
+        padding-left: 2rem;
+        color: #3c3c45;
+        font-size: 1.4rem;
+        font-weight: 300; }
+
+.footer-nav {
+  border-top: 1px solid black; }
+
+.fnav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 3rem 0 6rem 0; }
+  .fnav-items__link {
+    list-style: none;
+    display: inline-block;
+    color: #3c3c45;
+    font-size: 1.4rem; }
+    .fnav-items__link a {
+      color: #3c3c45;
+      font-size: 1.4rem;
+      padding: 0 1rem; }
+
 .header {
   grid-template-columns: 1 / -1;
   background-image: url(../../img/hero-img@3x.jpg);
@@ -212,33 +290,39 @@ a {
     height: 346px;
     object-fit: contain;
     border-radius: 0.4rem; }
-  .card .card__right .card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end; }
-    .card .card__right .card-content button {
-      align-self: flex-start; }
-    .card .card__right .card-content h5 {
-      align-self: flex-start; }
+  .card .card__right .card-content button {
+    align-self: flex-start; }
+  .card .card__right .card-content h5 {
+    align-self: flex-start; }
 
 .card__left .card-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start; }
+  align-items: flex-start;
+  padding-right: 12rem; }
 
 .card .card-content p {
   margin-bottom: 2rem; }
 
 .news {
-  padding-top: 3rem; }
+  padding-top: 10rem; }
+
+.card-padding {
+  padding-left: 12rem; }
 
 .row {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 1rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -247,6 +331,13 @@ a {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 1rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 2rem) / 2); }
   .row .col-1-of-3 {
@@ -352,3 +443,39 @@ a {
       border-radius: 50%; }
     .blogpost-card__author p {
       padding-left: 2rem; }
+
+.playstore {
+  font-family: inherit;
+  background-color: #f7f7f8;
+  padding: 8rem 0 8rem 2rem; }
+
+.playstore-main {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.phone {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .phone-large {
+    height: 400px;
+    width: 200px; }
+  .phone-small {
+    margin: 0 0 0 2rem;
+    height: 320px;
+    width: 170px; }
+  .phone-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 4rem 10rem; }
+    .phone-content__store img {
+      height: 50%;
+      width: 125px; }
+    .phone-content h2 {
+      padding-bottom: 2rem;
+      color: #35353e; }
+    .phone-content p {
+      color: #3c3c45; }

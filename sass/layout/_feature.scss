@@ -14,12 +14,10 @@
         }
     }
     .card__right {
+
         .card-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-    
+                   
+  
             button {
                 align-self: flex-start;
             }
@@ -37,6 +35,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        padding-right: 12rem;
 
       }
   }
@@ -50,5 +49,9 @@
   // News section features
 
   .news {
-      padding-top: 3rem;
+      padding-top: 10rem;
+  }
+
+  .card-padding {
+      padding-left: 12rem;
   }
