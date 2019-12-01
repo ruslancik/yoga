@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  
+    font-size: 62.5%; //1 rem = 10px;
+}
+
+body {
+    font-family: 'CircularStd-Black';
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 100vh;
+}
+
+.container{
+    grid-template-columns: 2 / 14;
+}
+
+a {
+    text-decoration: none;
+    font-family: CircularStd-Book;
+}

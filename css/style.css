@@ -1,0 +1,125 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'CircularStd-Black'; }
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 100vh; }
+
+.container {
+  grid-template-columns: 2 / 14; }
+
+a {
+  text-decoration: none;
+  font-family: CircularStd-Book; }
+
+@font-face {
+  font-family: "CircularStd-Black";
+  src: url("font/CircularStd-Black.otf") format("opentype"); }
+
+@font-face {
+  font-family: "CircularStd-Bold";
+  src: url("font/CircularStd-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: "CircularStd-Book";
+  src: url("font/CircularStd-Book.otf") format("opentype"); }
+
+.btn {
+  display: block;
+  width: 142px;
+  height: 56px;
+  border-radius: 4px;
+  background-color: #f01863;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44; }
+
+.header {
+  grid-template-columns: 1 / -1;
+  background-image: url(../../img/hero-img@3x.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 2.5rem repeat(12, 1fr) 2.5rem; }
+
+.nav {
+  grid-column: 3 / 13;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  color: #ffffff;
+  font-size: 1.8rem; }
+  .nav-items {
+    text-decoration: none;
+    display: flex;
+    list-style-type: none; }
+    .nav-items a {
+      color: #ffffff;
+      padding: 2rem; }
+
+.logo {
+  font-size: 2.4rem; }
+
+.header-content {
+  grid-column: 3 / 7;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column; }
+  .header-content h1 {
+    font-size: 4.8rem; }
+  .header-content p {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding-bottom: 6rem; }
+
+.section-features {
+  background-color: red;
+  height: 20rem; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
