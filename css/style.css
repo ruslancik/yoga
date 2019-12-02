@@ -44,6 +44,12 @@ body {
 #container {
   width: 80%;
   margin: 0 auto; }
+  @media only screen and (max-width: 56.25em) {
+    #container {
+      width: 90%; } }
+  @media only screen and (max-width: 37.5em) {
+    #container {
+      width: 100%; } }
 
 a {
   text-decoration: none;
@@ -200,15 +206,31 @@ a {
   align-items: flex-start;
   flex-wrap: wrap;
   padding-bottom: 8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .footer-list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer-list__section {
+      padding-bottom: 2rem; } }
   .footer-list__section p {
     padding-bottom: 1rem;
     font-size: 1.4rem;
     color: #3c3c45; }
   .footer-list__section h6 {
     padding-bottom: 1.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer-list__section h6 {
+        text-align: center; } }
   .footer-list__section--items {
     list-style: none;
     padding: 1rem 0; }
+    @media only screen and (max-width: 37.5em) {
+      .footer-list__section--items {
+        padding-top: 0.4rem;
+        text-align: center; } }
     .footer-list__section--items a {
       text-decoration: none;
       font-size: 1.4rem;
@@ -241,11 +263,25 @@ a {
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 3rem 0 6rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .fnav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
+  .fnav-social .fnav-items__link {
+    display: inline-block; }
   .fnav-items__link {
     list-style: none;
     display: inline-block;
     color: #3c3c45;
     font-size: 1.4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .fnav-items__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        text-align: center; } }
     .fnav-items__link a {
       color: #3c3c45;
       font-size: 1.4rem;
@@ -257,7 +293,7 @@ a {
 
 .header {
   grid-template-columns: 1 / -1;
-  background-image: url(/img/hero-img.jpg);
+  background-image: url(../img/hero-img.jpg);
   background-position: top;
   background-size: cover;
   display: grid;
@@ -270,6 +306,13 @@ a {
   margin-top: 2rem;
   color: #ffffff;
   font-size: 1.8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .nav {
+      grid-column: 1 / -1;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 2rem 0; } }
   .nav-items {
     text-decoration: none;
     display: flex;
@@ -277,9 +320,15 @@ a {
     .nav-items a {
       color: #ffffff;
       padding: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .nav-items a {
+          padding: 0 2rem; } }
 
 .logo {
   font-size: 2.4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .logo {
+      padding-bottom: 3rem; } }
 
 .header-content {
   grid-column: 3 / 7;
@@ -288,6 +337,18 @@ a {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column; }
+  @media only screen and (max-width: 56.25em) {
+    .header-content {
+      grid-column: 3 / -1; }
+      .header-content .heading-5 {
+        font-size: 2.5rem; }
+      .header-content .heading-1 {
+        font-size: 5.5rem; } }
+  @media only screen and (max-width: 56.25em) and (max-width: 37.5em) {
+    .header-content .heading-5 {
+      font-size: 2rem; }
+    .header-content .heading-1 {
+      font-size: 4rem; } }
   .header-content h1 {
     margin-bottom: 3.2rem; }
   .header-content p {
@@ -299,11 +360,21 @@ a {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      flex-direction: column;
+      margin: 3rem 1rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .card__reverse {
+      flex-direction: column-reverse; } }
   .card-image {
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .card-image {
+        width: 100%; } }
     .card-image img {
       width: 100%;
       height: auto;
@@ -315,6 +386,9 @@ a {
     justify-content: center;
     flex-direction: column;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .card-content {
+        width: 100%; } }
     .card-content button {
       align-self: flex-start; }
     .card-content h5 {
@@ -441,6 +515,9 @@ a {
   .blogpost-card__img {
     height: 13rem;
     width: 100%; }
+    @media only screen and (max-width: 37.5em) {
+      .blogpost-card__img {
+        height: 20rem; } }
   .blogpost-card__content {
     padding: 2rem; }
     .blogpost-card__content a {
@@ -474,18 +551,33 @@ a {
   justify-content: center;
   align-items: center; }
   .phone-large {
-    height: 400px;
-    width: 200px; }
+    height: 40rem;
+    width: 20rem; }
+    @media only screen and (max-width: 37.5em) {
+      .phone-large {
+        height: 30rem;
+        width: auto; } }
   .phone-small {
     margin: 0 0 0 2rem;
-    height: 320px;
-    width: 170px; }
+    height: 32rem;
+    width: 17rem; }
+    @media only screen and (max-width: 37.5em) {
+      .phone-small {
+        height: 25rem;
+        width: auto;
+        margin: 0 1rem; } }
   .phone-content {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     padding: 4rem 10rem; }
+    @media only screen and (max-width: 56.25em) {
+      .phone-content {
+        padding: 2rem 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .phone-content {
+        padding: 2rem 1rem; } }
     .phone-content__store img {
       height: 50%;
       width: 125px; }

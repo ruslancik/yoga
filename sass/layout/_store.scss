@@ -15,15 +15,24 @@
     justify-content: center;
     align-items: center;
     &-large {
-        height: 400px;
-        width: 200px;
+        height: 40rem;
+        width: 20rem;
+        @include respond(phone) { 
+            height: 30rem;
+            width: auto;
+        }
      
     }
 
     &-small {
         margin: 0 0 0 2rem;
-        height: 320px;
-        width: 170px;
+        height: 32rem;
+        width: 17rem;
+        @include respond(phone) { 
+            height: 25rem;
+            width: auto;
+            margin: 0 1rem;
+        }
     }
 
     &-content {
@@ -32,6 +41,12 @@
         align-items: flex-start;
         flex-direction: column;
         padding: 4rem 10rem;
+        @include respond(tab-port) { 
+            padding: 2rem 1rem;
+        }
+        @include respond(phone) { 
+            padding: 2rem 1rem;
+        }
 
         &__store {
             img {
